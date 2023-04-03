@@ -1,5 +1,6 @@
 package reboot.spring;
 
+@MyComponent
 public class SimpleBootService implements BootService {
 
     @Override
