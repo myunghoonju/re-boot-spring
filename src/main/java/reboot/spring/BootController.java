@@ -4,8 +4,13 @@ import java.util.Objects;
 
 public class BootController {
 
+    private final BootService service;
+
+    public BootController(BootService service) {
+        this.service = service;
+    }
+
     public String reboot(String name) {
-        SimpleBootService service = new SimpleBootService();
         return service.reboot(Objects.requireNonNull(name));
     }
 }

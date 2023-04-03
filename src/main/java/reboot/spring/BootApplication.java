@@ -20,6 +20,7 @@ public class BootApplication {
 	public static void main(String[] args) {
 		GenericApplicationContext applicationContext = new GenericApplicationContext();
 		applicationContext.registerBean(BootController.class);
+		applicationContext.registerBean(SimpleBootService.class);
 		applicationContext.refresh();
 
 		ServletWebServerFactory factory = new TomcatServletWebServerFactory();
