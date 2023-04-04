@@ -22,7 +22,7 @@ class BootControllerTest {
         //validation:: status code, content-type, body
         assertThat(restForEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(restForEntity.getHeaders().getFirst(HttpHeaders.CONTENT_TYPE)).startsWith(MediaType.TEXT_PLAIN_VALUE);
-        assertThat(restForEntity.getBody()).isEqualTo("SimpleBootService reboot " + "Spring");
+        assertThat(restForEntity.getBody()).isEqualTo("Spring");
 
     }
 }
