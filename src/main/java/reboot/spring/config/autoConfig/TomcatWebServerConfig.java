@@ -3,9 +3,9 @@ package reboot.spring.config.autoConfig;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import reboot.spring.config.MyAutoConfig;
 
-@Configuration
+@MyAutoConfig
 public class TomcatWebServerConfig {
 
     @Bean
