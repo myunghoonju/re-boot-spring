@@ -1,6 +1,5 @@
 package reboot.spring;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpHeaders;
@@ -23,6 +22,5 @@ class BootControllerTest {
         assertThat(restForEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(restForEntity.getHeaders().getFirst(HttpHeaders.CONTENT_TYPE)).startsWith(MediaType.TEXT_PLAIN_VALUE);
         assertThat(restForEntity.getBody()).isEqualTo("Spring");
-
     }
 }
