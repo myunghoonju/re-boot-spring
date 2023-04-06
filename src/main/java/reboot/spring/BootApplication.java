@@ -1,6 +1,7 @@
 package reboot.spring;
 
 import org.springframework.boot.SpringApplication;
+import reboot.spring.config.MySpringbootApplication;
 
 @MySpringbootApplication
 public class BootApplication {
