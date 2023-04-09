@@ -1,6 +1,7 @@
-package reboot.spring.config.autoConfig;
+package reboot.spring.config;
 
 import org.springframework.context.annotation.Conditional;
+import reboot.spring.config.autoConfig.MyOnClassCondition;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
