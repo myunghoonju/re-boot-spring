@@ -1,5 +1,6 @@
-package reboot.spring.config.autoConfig;
+package reboot.spring.config.missingBean;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,7 @@ import reboot.spring.config.MyAutoConfig;
 public class TomcatWebServerConfig {
 
     @Bean
+    @ConditionalOnMissingBean
     public ServletWebServerFactory tomcatWebServerFactory() {
         return new TomcatServletWebServerFactory();
     }
