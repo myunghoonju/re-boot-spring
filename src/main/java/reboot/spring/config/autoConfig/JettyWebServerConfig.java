@@ -1,4 +1,4 @@
-package reboot.spring.config.missingBean;
+package reboot.spring.config.autoConfig;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory;

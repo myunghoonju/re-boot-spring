@@ -1,2 +1,7 @@
-server:
-  port: 8081
+server.port: 8081
+
+server.contextPath: '/app'
+
+my:
+  name: 'ApplicationRunner'
+

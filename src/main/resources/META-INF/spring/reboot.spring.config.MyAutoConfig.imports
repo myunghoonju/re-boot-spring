@@ -1,3 +1,4 @@
 reboot.spring.config.autoConfig.DispatcherServletConfig
-reboot.spring.config.missingBean.TomcatWebServerConfig
-reboot.spring.config.missingBean.JettyWebServerConfig
+reboot.spring.config.autoConfig.TomcatWebServerConfig
+reboot.spring.config.autoConfig.JettyWebServerConfig
+reboot.spring.config.autoConfig.PropertyPlaceHolerConfig
